@@ -19,7 +19,6 @@ export class ProductController {
       });
 
       const productSaved = await productRepository.save(newProduct);
-      console.log(productSaved);
 
       return res.status(201).json(productSaved);
     } catch (error) {

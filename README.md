@@ -1,4 +1,4 @@
-# API Typescript MongoDB and TypeORM
+# API Typescript Postgres and TypeORM
 
 ## Run project
 
@@ -11,8 +11,11 @@ npm install
 
 Configure environment variables (.env);
 
-Run:
+Run DataBase Docker:
 docker-compose -d up
+
+Run Server:
+npm run dev
 
 Migrations Generate:
 npm run migration:generate

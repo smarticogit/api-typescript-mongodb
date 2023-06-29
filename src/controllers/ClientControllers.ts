@@ -26,6 +26,7 @@ export class ClientController {
         name,
         email,
         password,
+        products: [],
       });
 
       await clientRepository.save(newClient);
