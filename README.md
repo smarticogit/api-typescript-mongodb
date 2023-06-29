@@ -13,3 +13,9 @@ Configure environment variables (.env);
 
 Run:
 docker-compose -d up
+
+Migrations Generate:
+npm run migration:generate
+
+Run Migrations
+npm run migration:run

@@ -1,20 +1,6 @@
 import "reflect-metadata";
-import 'dotenv/config'
+import "dotenv/config";
 import { DataSource } from "typeorm";
-
-// export const AppDataSource = new DataSource({
-//   type: "postgres",
-//   host: "localhost",
-//   port: 5432,
-//   username: "postgres",
-//   password: "postgres",
-//   database: "postgres",
-//   synchronize: true,
-//   logging: false,
-//   entities: [`${__dirname}/**/entities/*.{ts,js}`],
-//   migrations: [`${__dirname}/**/migration/*.{ts,js}`],
-//   migrationsRun: true,
-// });
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -28,4 +14,5 @@ export const AppDataSource = new DataSource({
   entities: [`${__dirname}/**/entities/*.{ts,js}`],
   migrations: [`${__dirname}/**/migration/*.{ts,js}`],
   migrationsRun: true,
+  uuidExtension: "pgcrypto",
 });
